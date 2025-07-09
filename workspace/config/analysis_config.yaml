@@ -1,0 +1,34 @@
+data:
+  input_file: "../data/Working File Phase I (1).xlsx"
+  required_columns: 
+    - "ac_name"
+    - "pc_name" 
+    - "BOOTHNAME"
+    - "BJP"
+    - "TMC"
+    - "LF"
+    - "ValidVotes"
+    - "Voters2024"
+    - "P_20"
+    - "P_20_30"
+    - "P_30_40"
+    - "P_40_50"
+    - "P_50_60"
+    - "Above_60"
+    - "MALE"
+    - "FEMALE"
+    - "Minority"
+  
+analysis:
+  opportunity_threshold: 15  # Percentage points for close contests
+  significance_level: 0.05
+  outlier_std_threshold: 3
+  
+visualization:
+  figure_size: [12, 8]
+  color_scheme: "viridis"
+  dpi: 300
+  
+output:
+  report_format: ["html"]
+  output_directory: "reports/"
